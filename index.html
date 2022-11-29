@@ -16,7 +16,7 @@
         <h1 class="text-center font-weight-bolder mt-5 orange" style="font-size: 17em;">J31G</h1>
         <p class="text-center" style="font-size: 6em;"><strong class="orange">J</strong>amie: <strong
                 class="orange">31</strong> reasons to love the <strong class="orange">G</strong>iant</p>
-        <div class="text-center mt-5">
+        <div id="button" class="text-center mt-5">
             <a href="#LET'S_GO"><button type="button" class="click-me">SHOW ME</button></a>
         </div>
     </header>
@@ -305,7 +305,7 @@
             transition: all 0.5s;
         }
 
-        .click-me:hover, .click-me:active {
+        .click-me:hover {
             color: white;
             border: 2px solid var(--orange-clr) !important;
             padding-left: 100px;
@@ -355,7 +355,9 @@
         }
 
         @media only screen and (max-width: 1300px) {
-            
+            #button {
+                display: none;
+            }
             header {
                 width: auto !important;
                 padding: 20px !important;
