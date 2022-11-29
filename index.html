@@ -22,6 +22,7 @@
     </header>
 
     <main>
+        <p id="mobile-paragraph" class="text-center my-5">♡♡♡</p>
         <h2 id="LET'S_GO" class="mt-5"></h2>
         <!-- FIRST SCREEN -->
         <div class="first-screen reveal">
@@ -353,10 +354,15 @@
         footer {
             height: 100vh;
         }
-
+        #mobile-paragraph {
+            display: none;
+        }
         @media only screen and (max-width: 1300px) {
             #button {
                 display: none;
+            }
+            #mobile-paragraph {
+                display: block;
             }
             header {
                 width: auto !important;
